@@ -6,12 +6,16 @@ export interface Players{
     totalScore: number} 
 
 // rating formula
-const rating = (wins / totalGames) * 100 + (totalScore / totalGames)
+const playerRating = (wins / totalGames) * 100 + (totalScore / totalGames)
 // total score
 const totalScore = (wins - losses)
+// total games 
+const totalGames = (wins + losses)
+
+
 
 const Players[] [
-    {    id: 001,
+    {   id: 001,
         name: ShadowStrike,
         wins: 15,
         losses: 5,
@@ -30,6 +34,3 @@ const Players[] [
         totalScore:0
     }
 ]
-
-        
-
